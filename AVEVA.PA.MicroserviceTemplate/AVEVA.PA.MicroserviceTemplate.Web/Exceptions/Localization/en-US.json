@@ -1,0 +1,19 @@
+{
+  "AVEVA.PA.MicroserviceTemplate": {
+    "$message": "There is a AVEVA.PA.MicroserviceTemplate error occurred somewhere",
+    "$status": 500,
+    "Proj": {
+      "$message": "There is an error occured during some project action.",
+      "NotFound": {
+        "$status": 404,
+        "$message": "Sorry but the project with ID {projectID} was not found"
+      },
+      "FailedToCreate": {
+        "$message": "Error while attempting to create project with the passed parameters: {projectJson}"
+      },
+      "NoProjects": {
+        "$message": "There are no proejcts found. Please create one first."
+      }
+    }
+  }
+}

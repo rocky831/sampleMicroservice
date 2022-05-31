@@ -1,0 +1,19 @@
+﻿{
+  "AVEVA.PA.MicroserviceTemplate": {
+    "$message": "Произошла некая ошибка в микросервиса AVEVA.PA.MicroserviceTemplate",
+    "$status": 500,
+    "Proj": {
+      "$message": "Произошла ошибка во время работы с проектом",
+      "NotFound": {
+        "$status": 404,
+        "$message": "Извините но проект с номер {projectID} не найден "
+      },
+      "FailedToCreate": {
+        "$message": "Ошибка создания проекта с параметрами: {projectJson}"
+      },
+      "NoProjects": {
+        "$message": "Не найден ни один проект. Пожалуйста создайте как минимум один проект и попробуйте снова."
+      }
+    }
+  }
+}

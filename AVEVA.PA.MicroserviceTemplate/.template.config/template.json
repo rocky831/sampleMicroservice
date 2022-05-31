@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Predictive Analytics",
+	"classifications": [ "Microservice", "BackgroundWoker", "RabbitMQ"  ],
+	"identity": "PredictiveAnalytics.MicroserviceTemplate",
+	"name": "PredictiveAnalytics : MicroserviceTemplate ",
+	"shortName": "PA-Microservice",
+	"sourceName": "MicroserviceTemplate",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	}
+}

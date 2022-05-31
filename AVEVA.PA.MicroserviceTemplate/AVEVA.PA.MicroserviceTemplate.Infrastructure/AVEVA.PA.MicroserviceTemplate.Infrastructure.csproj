@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DefaultModule.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\AVEVA.PA.DataAccess.Models\AVEVA.PA.DataAccess.Models.csproj" />
+    <ProjectReference Include="..\..\..\Common\AVEVA.PA.DataAccess\AVEVA.PA.DataAccess.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\AVEVA.PA.Exceptions\AVEVA.PA.Exceptions.csproj" />
+    <ProjectReference Include="..\AVEVA.PA.MicroserviceTemplate.Core\AVEVA.PA.MicroserviceTemplate.Core.csproj" />
+    <ProjectReference Include="..\AVEVA.PA.MicroserviceTemplate.SharedKernel\AVEVA.PA.MicroserviceTemplate.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MassTransit" Version="8.0.2" />
+	  <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
